@@ -11,14 +11,27 @@ function adicionarAmigo(){
         return;
     }
 
+    // Verificando se o nome já foi adicionado a lista anteriormente
     if (amigos.includes(nome)){
         alert("Esse nome já foi adicionado!");
         return;
     }
 
     amigos.push(nome);
-    //atualizarLista();
+    atualizarLista();
     input.value = "";
 
     console.log(`${nome} foi adicionado! Lista atual:`, amigos);
+}
+
+function atualizarLista(){
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < amigos.length; i++){
+        const li = document.createElement("li");
+        li.textContent = amigos[i];
+
+        lista.appendChild(li);
+    }
 }
