@@ -21,7 +21,7 @@ function adicionarAmigo(){
     atualizarLista();
     input.value = "";
 
-    console.log(`${nome} foi adicionado! Lista atual:`, amigos);
+    //console.log(`${nome} foi adicionado! Lista atual:`, amigos);
 }
 
 function atualizarLista(){
