@@ -54,7 +54,7 @@ function sortearAmigo(){
 
     // Exibindo o resultado
     const amigoResultado = document.getElementById('resultado');
-    amigoResultado.innerHTML = `
+    amigoResultado.innerHTML += `
         <li class="sorteado">
             🎉 ${amigoSorteado} foi sorteado(a)!
         </li>
