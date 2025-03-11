@@ -60,3 +60,11 @@ function sortearAmigo(){
         </li>
     `;
 }
+
+function reiniciarSorteio() {
+    amigos = [];    // Limpa o array principal
+    document.getElementById('listaAmigos').innerHTML = '';  // Limpa a lista visual
+    document.getElementById('resultado').innerHTML = '';    // Limpa os resultados
+    document.getElementById('amigo').value = '';    // Reseta o campo de input
+    //console.log('Sorteio reiniciado!');
+}
