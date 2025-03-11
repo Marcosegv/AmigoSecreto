@@ -48,6 +48,9 @@ function sortearAmigo(){
 
     // Sorteando o amigo
     const amigoSorteado = amigos[indiceSorteado];
+    amigos.splice(indiceSorteado, 1);   // Remove o nome do array
+
+    atualizarLista();
 
     // Exibindo o resultado
     const amigoResultado = document.getElementById('resultado');
